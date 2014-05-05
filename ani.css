@@ -1,0 +1,88 @@
+@keyframes rotate {
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+  }
+  to {
+     transform:rotate(1000deg);
+    -ms-transform:rotate(1000deg); 
+    -moz-transform:rotate(1000deg); 
+    -webkit-transform:rotate(1000deg); 
+    -o-transform:rotate(1000deg); 
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+  }
+  to {
+     transform:rotate(1000deg);
+    -ms-transform:rotate(1000deg); 
+    -moz-transform:rotate(1000deg); 
+    -webkit-transform:rotate(1000deg); 
+    -o-transform:rotate(1000deg); 
+  }
+}
+
+@keyframes rotate_revert {
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+  }
+  to {
+     transform:rotate(-1000deg);
+    -ms-transform:rotate(-1000deg); 
+    -moz-transform:rotate(-1000deg); 
+    -webkit-transform:rotate(-1000deg); 
+    -o-transform:rotate(-1000deg); 
+  }
+}
+
+@-webkit-keyframes rotate_revert {
+  from {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg); 
+  }
+  to {
+     transform:rotate(-1000deg);
+    -ms-transform:rotate(-1000deg); 
+    -moz-transform:rotate(-1000deg); 
+    -webkit-transform:rotate(-1000deg); 
+    -o-transform:rotate(-1000deg); 
+  }
+}
+
+
+body .rotate_start{
+  animation-play-state:running;
+  -webkit-animation-play-state:running;
+}
+.rotate{
+  position : relative;
+  animation : rotate 1s linear infinite;
+  -webkit-animation : rotate 1s linear infinite;
+  animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+}
+
+.rotate_revert{
+  position : relative;
+  animation : rotate_revert 1s linear infinite;
+  -webkit-animation : rotate_revert 1s linear infinite;
+  animation-play-state:paused;
+  -webkit-animation-play-state:paused;
+}
