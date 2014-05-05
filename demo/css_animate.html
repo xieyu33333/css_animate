@@ -10,14 +10,24 @@
   </head>
   <body>
     <img class="prop" src="propeller.jpg" />
+    <img class="test_rotate" src="propeller.jpg" />
     <div class="test_rotate_y">5</div>
+    <div class="test_rotate_x">6</div>
     <script>
     $(".prop").click(function(){
-      $(this).ani_scroll(); 
+      $(this).auto_rotate(); 
     })
 
     $(".test_rotate_y").click(function(){
       $(this).rotate_y({deg: 360}); 
+    })
+
+    $(".test_rotate_x").click(function(){
+      $(this).rotate_x({deg: 360}); 
+    })
+
+    $(".test_rotate").click(function(){
+      $(this).rotate({deg: 360}); 
     })
     </script>
   </body>
