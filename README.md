@@ -1,5 +1,14 @@
 ##CSS_ANIMATE
 使用jQuery对常用的CSS 3动画效果进行了封装。
+使用范例：
+    
+    $(selector1).click(function(){
+      $(this).rotate();    //点击正向旋转180度
+    })
+    $(selector2).click(function(){
+      var opts = {deg: 360};
+      $(this).rotate(opts);    //点击正向旋转360度
+    })
 ###Rotate
 旋转效果，包括2D旋转、沿x、y轴的3D旋转
 ####auto_rotate()
